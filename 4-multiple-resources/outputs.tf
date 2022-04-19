@@ -9,6 +9,6 @@ output "public_subnet_id" {
 }
 
 output "private_subnet_id" {
-  description = "Public subnet id"
+  description = "Private subnet id"
   value       = aws_subnet.myapp-private-subnet.id
 }
