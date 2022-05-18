@@ -29,7 +29,7 @@ resource "aws_key_pair" "keystore" {
 
 }
 
-resource "local_file" "pem_file" {
+resource "local_sensitive_file" "pem_file" {
   filename = pathexpand("~/.ssh/${var.app_name}.pem")
   file_permission = "400"
   directory_permission = "700"
